@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin-top: 10px;
+}
+body{
+    font-family: 'Roboto Mono', monospace;
+    margin: 20px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+    padding: 15px;
+    margin-top: 15px;
+    border: 3px solid #28A98F;
+    border-radius: 3px;
+}
+.link:hover{
+    background-color: #28A98F;
+    color: #ffffff;
+}
+ol{
+    width: 50%;
+}
+h2{
+    color: #28A98F;
+    font-weight: 500;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+    font-size: 18px;
+}
+.form{
+    width: 450px;
+    font-size: 14px;
+    font-weight: 300;
+    border: 3px solid #28A98F;
+    padding: 10px;
+}
+.btn{
+    display: flex;
+    justify-content: left;
+    padding-left: 19px;
+}
+
+.btn_submit{
+    margin-left: 5px;
+    margin-top: 15px;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+    background-color: transparent;
+    border: 3px solid #28A98F;
+    border-radius: 3px;
+}
+.btn_submit:hover{
+    background-color: #28A98F;
+    color: #ffffff;
+}
+.field{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.pred{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 18px 10px 0;
+}
+input:focus {
+    outline: 2px solid #28a98f;
+}

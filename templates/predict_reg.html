@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>Предсказание свойств композитов</h2>
+    <form action="" method="post">
+
+        <fieldset class="form">
+            <legend>Введите характеристики композита</legend>
+            <div class="field">
+            <label for="feature_1">Соотношение матрица-наполнитель</label>
+            <input name="feature_1" type='number' step=0.000001 min=0 id="feature_1" required>
+            </div>
+            <div class="field">
+            <label for="feature_2">Плотность, кг/м3</label>
+            <input name="feature_2" type='number' step=0.000001 min=0 id="feature_2" required>
+            </div>
+            <div class="field">
+            <label for="feature_3">Модуль упругости, ГПа</label>
+            <input name="feature_3" type='number' step=0.000001 min=0 id="feature_3" required>
+            </div>
+            <div class="field">
+            <label for="feature_4">Количество отвердителя, м.%</label>
+            <input name="feature_4" type='number' step=0.000001 min=0 id="feature_4" required>
+            </div>
+            <div class="field">
+            <label for="feature_5">Содержание эпоксидных групп,%_2</label>
+            <input name="feature_5" type='number' step=0.000001 min=0 id="feature_5" required>
+            </div>
+            <div class="field">
+            <label for="feature_6">Температура вспышки, С_2</label>
+            <input name="feature_6" type='number' step=0.000001 min=0 id="feature_6" required>
+            </div>
+            <div class="field">
+            <label for="feature_7">Поверхностная плотность, г/м2</label>
+            <input name="feature_7" type='number' step=0.000001 min=0 id="feature_7" required>
+            </div>
+            <div class="field">
+            <label for="feature_8">Потребление смолы, г/м2</label>
+            <input name="feature_8" type='number' step=0.000001 min=0 id="feature_8" required>
+            </div>
+            <div class="field">
+            <label for="feature_9">Угол нашивки, град</label>
+            <input name="feature_9" type='number' step=0.000001 min=0 id="feature_9" required>
+            </div>
+            <div class="field">
+            <label for="feature_10">Шаг нашивки</label>
+            <input name="feature_10" type='number' step=0.000001 min=0 id="feature_10" required>
+            </div>
+            <div class="field">
+            <label for="feature_11">Плотность нашивки</label>
+            <input name="feature_11" type='number' step=0.000001 min=0 id="feature_11" required>
+            </div>
+            <input type="submit" class="btn_submit" value="Отправить">
+        </fieldset>
+
+    </form>
+
+    <div class="pred">
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
+    </div>
+
+    <div class="btn">
+        <a href="index.html" class="link">Назад</a>
+    </div>
+
+{% endblock %}
