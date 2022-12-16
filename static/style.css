@@ -26,6 +26,9 @@ body{
     background-color: #28A98F;
     color: #ffffff;
 }
+.link:focus{
+    outline: none;
+}
 ol{
     width: 50%;
 }
@@ -52,7 +55,6 @@ h2{
     justify-content: left;
     padding-left: 19px;
 }
-
 .btn_submit{
     margin-left: 5px;
     margin-top: 15px;
@@ -79,6 +81,6 @@ h2{
     font-weight: 400;
     margin: 18px 10px 0;
 }
-input:focus {
-    outline: 2px solid #28a98f;
+input:focus{
+    outline: 2px solid #28A98F;
 }
